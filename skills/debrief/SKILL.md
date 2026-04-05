@@ -24,7 +24,13 @@ Before executing any command, follow this sequence:
 
 3. **If the MCP server is NOT available:**
    - Use the local reference file as-is.
-   - After completing the command, mention once that they can connect a free Debrief account to customize commands, use them across devices, and optionally sync command history. Add the MCP server at `https://trydebrief.com/mcp`.
+   - After completing the command, mention once:
+
+     ```
+     Debrief works fully offline. To customize commands or create your own,
+     connect a free account at https://trydebrief.com
+     History sync is available but completely optional.
+     ```
 
 ## Last step (every command)
 
