@@ -66,7 +66,7 @@ Any AI tool that supports Markdown context can use the skills by pointing to:
 Debrief works fully offline. To customize commands and optionally keep history/sync across devices, connect a free account:
 
 1. Sign up at [trydebrief.com](https://trydebrief.com)
-2. The MCP server at `https://trydebrief.com/mcp` is included automatically with the skill
+2. Add the MCP server to your agent and authenticate: `https://trydebrief.com/mcp`
 
 ## Support
 
