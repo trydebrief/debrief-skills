@@ -1,0 +1,64 @@
+# Debrief
+
+Your local Chief of Staff. Morning briefings, prioritized triage, and custom commands — all your data stays on your device. Works with any agent that supports MCP and skills.
+
+## Skills
+
+- **[Debrief](skills/debrief/)** (`debrief`) — morning briefings, prioritized triage across email/Slack/calendar, custom commands, and interactive setup. Works fully offline with optional cloud sync.
+
+## Installation
+
+### Claude Code
+
+```bash
+/skill install github@trydebrief/debrief
+```
+
+### Claude.ai
+
+1. Download this repository as a `.zip`.
+2. Go to [https://claude.ai/customize/skills](https://claude.ai/customize/skills)
+3. Click "+" > Create skill > Upload a skill
+4. Select the `.zip` and you're done.
+
+### Cursor / Windsurf
+
+Add to your project's `.cursor/settings.json` or use the same Claude Code skill format.
+
+### Codex / Gemini CLI
+
+Point your agent to `agents/AGENTS.md` which contains skill descriptions and paths.
+
+### Other AI tools
+
+Any AI tool that supports Markdown context can use the skills by pointing to:
+
+- `agents/AGENTS.md` — skill index
+- `skills/*/SKILL.md` — individual skill documentation
+
+## Commands
+
+| Command               | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| `/debrief gm`         | Morning briefing on what matters today                      |
+| `/debrief triage`     | Prioritized messages across all channels with draft replies |
+| `/debrief init`       | Set up or update your preferences                           |
+| `/debrief new`        | Create a custom command                                     |
+| `/debrief edit <cmd>` | Edit an existing command                                    |
+| `/debrief <custom>`   | Run a custom command                                        |
+
+## Optional: Connect your account
+
+Debrief works fully offline. To customize commands and optionally keep history/sync across devices, connect a free account:
+
+1. Sign up at [trydebrief.com](https://trydebrief.com)
+2. The MCP server at `https://trydebrief.com/mcp` is included automatically with the skill
+
+## Support
+
+- [trydebrief.com](https://trydebrief.com)
+- [GitHub Issues](https://github.com/trydebrief/debrief/issues)
+
+## License
+
+[Apache-2.0](LICENSE)

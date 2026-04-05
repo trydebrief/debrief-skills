@@ -1,0 +1,14 @@
+{
+  "name": "debrief",
+  "version": "0.1.0",
+  "description": "Open-source, fully local Chief of Staff for Claude Code. Morning briefings, triage, and custom commands — all your data stays on your device.",
+  "author": {
+    "name": "Debrief",
+    "email": "will@trydebrief.com",
+    "url": "https://trydebrief.com"
+  },
+  "homepage": "https://trydebrief.com",
+  "repository": "https://github.com/trydebrief/debrief",
+  "license": "Apache-2.0",
+  "keywords": ["productivity", "chief-of-staff", "triage", "briefing", "slack", "gmail"]
+}
