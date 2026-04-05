@@ -9,17 +9,17 @@ Your local Chief of Staff. Morning briefings, prioritized triage, and custom com
 ## Installation
 
 ```bash
-npx skills add trydebrief/debrief
+npx skills add trydebrief/debrief-skills
 ```
 
 ### Claude Code
 
 ```bash
 # Add the marketplace
-/skill marketplace add https://github.com/trydebrief/debrief
+/plugin marketplace add https://github.com/trydebrief/debrief-skills
 
 # Install the skill
-/skill install debrief@debrief
+/plugin install debrief@debrief-skills
 ```
 
 ### Claude.ai
@@ -65,7 +65,7 @@ Debrief works fully offline. To customize commands and optionally keep history/s
 ## Support
 
 - [trydebrief.com](https://trydebrief.com)
-- [GitHub Issues](https://github.com/trydebrief/debrief/issues)
+- [GitHub Issues](https://github.com/trydebrief/debrief-skills/issues)
 
 ## License
 
