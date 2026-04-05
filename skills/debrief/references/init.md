@@ -2,7 +2,7 @@
 
 Set up or update the user's Debrief preferences. This is an interactive, step-by-step flow. Ask ONE question at a time and wait for the user's answer before moving on.
 
-**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion` in Claude Code), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number, a comma-separated list of numbers, or their own text.
+**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion`), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number, a comma-separated list of numbers, or their own text.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ Set up or update the user's Debrief preferences. This is an interactive, step-by
 ```
 Debrief needs a connected account to save your preferences.
 
-Log in at https://trydebrief.com, then add the Debrief MCP server to Claude Code.
+Log in at https://trydebrief.com, then add the Debrief MCP server to your agent.
 ```
 
 And stop here.

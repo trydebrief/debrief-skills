@@ -2,7 +2,7 @@
 
 The user wants to create a new custom debrief command. Walk them through it interactively, one question at a time.
 
-**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion` in Claude Code), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number or their own text.
+**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion`), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number or their own text.
 
 ## Step 1: Command name
 

@@ -2,7 +2,7 @@
 
 The user wants to edit an existing debrief command. The command name is `$ARGUMENTS[1]`.
 
-**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion` in Claude Code), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number or their own text.
+**Presenting choices:** If you have an interactive selection tool (e.g. `AskUserQuestion`), use it to present options as a selectable UI. Otherwise, present a clean numbered list and let the user reply with a number or their own text.
 
 ## Step 1: Resolve the command
 
