@@ -8,10 +8,18 @@ Your local Chief of Staff. Morning briefings, prioritized triage, and custom com
 
 ## Installation
 
+```bash
+npx skills add trydebrief/debrief
+```
+
 ### Claude Code
 
 ```bash
-/skill install github@trydebrief/debrief
+# Add the marketplace
+/skill marketplace add https://github.com/trydebrief/debrief
+
+# Install the skill
+/skill install debrief@debrief
 ```
 
 ### Claude.ai
@@ -23,7 +31,7 @@ Your local Chief of Staff. Morning briefings, prioritized triage, and custom com
 
 ### Cursor / Windsurf
 
-Add to your project's `.cursor/settings.json` or use the same Claude Code skill format.
+Add to your project's `.cursor/settings.json` or use the same skill format.
 
 ### Codex / Gemini CLI
 
