@@ -2,7 +2,7 @@
   "mcpServers": {
     "debrief": {
       "type": "http",
-      "url": "https://www.trydebrief.com/mcp"
+      "url": "https://mcp.trydebrief.com/mcp"
     }
   }
 }
