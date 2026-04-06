@@ -49,7 +49,7 @@ Any AI tool that supports Markdown context can use the skills by pointing to:
 For custom commands, cross-device config, and optional history sync, add the MCP server:
 
 ```bash
-https://trydebrief.com/mcp
+https://www.trydebrief.com/mcp
 ```
 
 ## Commands
@@ -68,7 +68,7 @@ https://trydebrief.com/mcp
 Debrief works fully offline. To customize commands and optionally keep history/sync across devices, connect a free account:
 
 1. Sign up at [trydebrief.com](https://trydebrief.com)
-2. Add the MCP server to your agent and authenticate: `https://trydebrief.com/mcp`
+2. Add the MCP server to your agent and authenticate: `https://www.trydebrief.com/mcp`
 
 ## Support
 
