@@ -1,0 +1,36 @@
+name: Package Skill ZIP
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create skill ZIP
+        run: |
+          cd skills
+          zip -r ../debrief-skill.zip debrief/
+          echo "--- ZIP contents ---"
+          unzip -l ../debrief-skill.zip
+
+      - name: Upload ZIP as release asset
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: debrief-skill.zip
+
+      - name: Upload ZIP as workflow artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: debrief-skill
+          path: debrief-skill.zip

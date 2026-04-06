@@ -1,6 +1,10 @@
 # Debrief
 
-Your local Chief of Staff. Morning briefings, prioritized triage, and custom commands — all your data stays on your device. Works with any agent that supports MCP and skills.
+Your private Chief of Staff.
+
+Morning briefings, prioritized triage, and custom commands — all your data stays on your device and between you and your agent.
+
+Works with any agent that supports MCP and skills.
 
 ## Skills
 
@@ -22,12 +26,20 @@ npx skills add trydebrief/debrief-skills
 /plugin install debrief@debrief-skills
 ```
 
-### Claude.ai
+### Claude Desktop / Claude Cowork
 
 1. Download this repository as a `.zip`.
-2. Go to [https://claude.ai/customize/skills](https://claude.ai/customize/skills)
-3. Click "+" > Create skill > Upload a skill
-4. Select the `.zip` and you're done.
+2. Customize > Add Plugin > Create Plugin > Upload Plugin
+
+### Claude.ai
+
+1. Go to [Releases](https://github.com/trydebrief/debrief-skills/releases/latest)
+2. Download `debrief-skill.zip`
+3. Go to https://claude.ai/customize/skills
+4. Click "+" → Create skill → Upload a skill
+5. Select the ZIP and you're done
+
+See below on how to use the MCP, if you want cross-device use and to enable sync (optional).
 
 ### Cursor / Windsurf
 
