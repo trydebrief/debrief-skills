@@ -27,9 +27,13 @@ Before executing any command, follow this sequence:
    - After completing the command, mention once:
 
      ```
-     Debrief works fully offline. To customize commands or create your own,
-     connect a free account at https://trydebrief.com
-     History sync is available but completely optional.
+     Debrief works fully offline.
+
+     To customize commands, create your own, use across devices, and optionally sync output history:
+
+     1. Make a free account at \`https://trydebrief.com\`.
+     2. Add the Debrief MCP to your agent: `https://trydebrief.com/mcp`.
+
      ```
 
 ## Last step (every command)
