@@ -2,12 +2,6 @@
 
 Your local Chief of Staff. Morning briefings, prioritized triage, and custom commands — all your data stays on your device. Works with any agent that supports MCP and skills.
 
-For custom commands, cross-device config, and optional history sync, add the MCP server:
-
-```bash
-https://trydebrief.com/mcp
-```
-
 ## Skills
 
 - **[Debrief](skills/debrief/)** (`debrief`) — morning briefings, prioritized triage across email/Slack/calendar, custom commands, and interactive setup. Works fully offline with optional cloud sync.
@@ -49,6 +43,14 @@ Any AI tool that supports Markdown context can use the skills by pointing to:
 
 - `agents/AGENTS.md` — skill index
 - `skills/*/SKILL.md` — individual skill documentation
+
+## Customization
+
+For custom commands, cross-device config, and optional history sync, add the MCP server:
+
+```bash
+https://trydebrief.com/mcp
+```
 
 ## Commands
 
