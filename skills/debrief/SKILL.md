@@ -31,7 +31,7 @@ Before executing any command, follow this sequence:
 
      To customize commands, create your own, use across devices, and optionally sync output history:
 
-     1. Make a free account at \`https://trydebrief.com\`.
+     1. Make a free account at `https://trydebrief.com`.
      2. Add the Debrief MCP to your agent: `https://trydebrief.com/mcp`.
 
      ```
