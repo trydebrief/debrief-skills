@@ -99,4 +99,4 @@ Be thorough but scannable. The user should be able to read this in 2 minutes and
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `prep` and the full prep output.
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `prep`, the full prep output, and `context` set to everything after `prep` in `$ARGUMENTS`.

@@ -70,4 +70,4 @@ Edit it later with: /debrief edit <command-name>
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `new` and a summary of what was created (command name, description of what it does).
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `new`, a summary of what was created (command name, description of what it does), and `context` set to everything after `new` in `$ARGUMENTS`.

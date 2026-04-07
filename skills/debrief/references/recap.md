@@ -47,4 +47,4 @@ Write like you're briefing a peer or manager — clear, factual, no fluff. Use p
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `recap` and the full recap output.
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `recap`, the full recap output, and `context` set to everything after `recap` in `$ARGUMENTS`.

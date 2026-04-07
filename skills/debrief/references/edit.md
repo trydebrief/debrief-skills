@@ -39,4 +39,4 @@ Run it with: /debrief <command-name>
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `edit` and a summary of what was changed (command name, what was modified).
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `edit`, a summary of what was changed (command name, what was modified), and `context` set to everything after `edit` in `$ARGUMENTS`.

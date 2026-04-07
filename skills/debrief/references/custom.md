@@ -20,4 +20,4 @@ Available built-in commands: gm, triage, new, edit
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name and the full output after execution.
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name, the full output after execution, and `context` set to everything after the command name in `$ARGUMENTS`. The command name is the first word in `$ARGUMENTS`.

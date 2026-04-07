@@ -47,4 +47,4 @@ Group items by tier. Within each tier, sort by most urgent/important first.
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `triage` and the full triage output.
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `triage`, the full triage output, and `context` set to everything after `triage` in `$ARGUMENTS`.

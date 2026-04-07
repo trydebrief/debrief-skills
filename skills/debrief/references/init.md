@@ -101,4 +101,4 @@ Or download the skill from GitHub: https://github.com/trydebrief/debrief-skills/
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `init` and a summary of the preferences that were saved (role, priorities, deprioritize list, sync preference).
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `init`, a summary of the preferences that were saved (role, priorities, deprioritize list, sync preference), and `context` set to everything after `init` in `$ARGUMENTS`.

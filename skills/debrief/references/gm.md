@@ -41,4 +41,4 @@ Be direct and opinionated. Don't hedge. If something is urgent, say so. If somet
 
 ## Saving output
 
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `gm` and the full briefing output.
+If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `gm`, the full briefing output, and `context` set to everything after `gm` in `$ARGUMENTS`.
