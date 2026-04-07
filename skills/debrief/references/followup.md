@@ -15,7 +15,7 @@ Use whatever MCP tools are available. Adapt to what's connected — don't error 
 Look at items from the **last two weeks**:
 
 - **Email**: Threads the user sent or replied to that have no resolution. Sent messages still awaiting a response. Starred, snoozed, or flagged threads.
-- **Slack**: DMs and threads the user participated in that are still active or went silent. Messages waiting on a response from either side.
+- **Slack**: DMs and threads the user participated in that are still active or went silent. Messages waiting on a response from either side. Also check `is:saved` across both public and private channels to catch Saved for Later items.
 - **Notion / docs**: Tasks assigned to the user. Open items the user created or was mentioned on.
 - **Calendar**: Action items from recent meetings (check meeting notes if available).
 
