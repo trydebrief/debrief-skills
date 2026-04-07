@@ -37,41 +37,46 @@ For every item, work through this:
 
 ## Output format
 
-Group items by who needs to act:
+Present everything in tables. People scan, they don't read — keep it tight.
 
 ```
 # Follow-ups
 
+**X need your action, Y waiting on others, Z cleared**
+
 ## You need to act
 
-### [Source] [Descriptive title — the topic, not the subject line]
-**Context:** [2-3 sentences: what this is about, why it matters, relevant timeline.]
-**Status:** [What happened or didn't. Call out missed deadlines, ghosting, or weak resolutions.]
-**Next step:** [Who does what — be specific.]
-**Draft message:**
-> [Ready to send, in the user's voice. Match the channel. Reference specifics from the thread — no generic nudges.]
+| # | Source | Item | Status | Next step |
+|---|--------|------|--------|-----------|
+| 1 | Slack | [Descriptive title — the topic, not the person] | [What happened or didn't, in one line] | [Specific action] |
+| 2 | Email | ... | ... | ... |
 
-## Someone else needs to act
+**Drafts**
 
-### [Source] [Descriptive title]
-**Context:** [What this is about and what's at stake.]
-**Status:** [Waiting on [person] since [when]. Note if they're past a deadline or expected window.]
-**Next step:** [Wait, nudge, or escalate.]
-**Draft nudge:** *(include only if overdue or stale)*
-> [Direct, specific, in the user's voice.]
+**1 — [Title]:** [Ready-to-send message in the user's voice. Match the channel. Reference specifics — no generic nudges.]
+
+**2 — [Title]:** ...
+
+## Waiting on others
+
+| # | Source | Item | Who | Since | Next step |
+|---|--------|------|-----|-------|-----------|
+| 1 | Slack | [Title] | [Person] | [Date or "2 weeks"] | Wait / Nudge / Escalate |
+
+Include a draft nudge below the table only for overdue or stale items, same format as above.
 
 ## Cleared
 
-### [Source] [Descriptive title]
-**Resolution:** [One line — what happened and whether it was sufficient.]
+| Source | Item | Resolution |
+|--------|------|------------|
+| Email | [Title] | [One line — what happened and whether it was sufficient] |
 ```
 
-End with:
-
-```
----
-**Summary:** X need your action, Y waiting on others, Z cleared
-```
+Rules:
+- Every item gets exactly one row. No multi-paragraph entries.
+- The "Item" column describes the substance, not "email from Sarah" — what Sarah is asking about.
+- Draft messages go below their table, not inline. Only include drafts for items that need action.
+- If there are no items in a section, omit that section entirely.
 
 ## Tone
 
