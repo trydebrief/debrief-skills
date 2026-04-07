@@ -70,6 +70,9 @@ https://mcp.trydebrief.com/mcp
 | --------------------- | ----------------------------------------------------------- |
 | `/debrief gm`         | Morning briefing on what matters today                      |
 | `/debrief triage`     | Prioritized messages across all channels with draft replies |
+| `/debrief recap`      | Written status update across all connected apps             |
+| `/debrief prep`       | One-pager to prepare for a person, topic, or meeting        |
+| `/debrief followup`   | Review pending threads and saved-for-later items            |
 | `/debrief init`       | Set up or update your preferences                           |
 | `/debrief new`        | Create a custom command                                     |
 | `/debrief edit <cmd>` | Edit an existing command                                    |

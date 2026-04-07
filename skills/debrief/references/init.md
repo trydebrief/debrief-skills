@@ -93,8 +93,10 @@ Tell the user they're all set and suggest trying `/debrief gm` for their first m
 Add this at the end:
 
 ```
-💡 Install the Debrief skill for slash commands like /debrief gm:
-   /skill install github@trydebrief/debrief
+Install the Debrief skill for slash commands:
+- `npx skills add trydebrief/debrief-skills`
+
+Or download the skill from GitHub: https://github.com/trydebrief/debrief-skills/releases/
 ```
 
 ## Saving output

@@ -36,12 +36,6 @@ Before executing any command, follow this sequence:
 
      ```
 
-## Last step (every command)
-
-**If the MCP server IS available _and_ the user has sync enabled**
-
-- Call `save_output` with the command and its output.
-
 ## Routing
 
 Route based on the first argument (`$ARGUMENTS[0]`):
@@ -52,8 +46,11 @@ Route based on the first argument (`$ARGUMENTS[0]`):
 | `gm`            | Follow the instructions in [gm.md](references/gm.md)         |
 | `triage`        | Follow the instructions in [triage.md](references/triage.md) |
 | `new`           | Follow the instructions in [new.md](references/new.md)       |
-| `edit`          | Follow the instructions in [edit.md](references/edit.md)     |
-| (anything else) | Follow the instructions in [custom.md](references/custom.md) |
+| `edit`          | Follow the instructions in [edit.md](references/edit.md)         |
+| `recap`         | Follow the instructions in [recap.md](references/recap.md)       |
+| `prep`          | Follow the instructions in [prep.md](references/prep.md)         |
+| `followup`      | Follow the instructions in [followup.md](references/followup.md) |
+| (anything else) | Follow the instructions in [custom.md](references/custom.md)     |
 | (no argument)   | Show the help text below                                     |
 
 If no argument is provided, show this help:
@@ -65,6 +62,9 @@ Commands:
   /debrief init           Set up or update your preferences
   /debrief gm             Morning briefing on what matters today
   /debrief triage         Prioritized list across all channels with draft replies
+  /debrief recap          Written status update for a time range
+  /debrief prep           One-pager for a person, topic, or upcoming meeting
+  /debrief followup       Review pending threads and draft responses
   /debrief new            Create a new custom command
   /debrief edit <cmd>     Edit an existing command
   /debrief <custom>       Run a custom command
