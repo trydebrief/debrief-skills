@@ -11,6 +11,5 @@
   "repository": "https://github.com/trydebrief/debrief-skills",
   "license": "Apache-2.0",
   "keywords": ["productivity", "chief-of-staff", "triage", "briefing", "slack", "gmail"],
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "skills": "./skills/"
 }

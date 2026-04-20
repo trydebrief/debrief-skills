@@ -1,43 +1,40 @@
 # /debrief prep
 
-Prepare a one-pager to get the user ready for a person, topic, or their upcoming meetings.
+A one-pager that gets the user ready for a person, topic, or upcoming meeting in two minutes.
 
 The user may optionally specify a **person's name**, a **topic**, or a **meeting title**. If nothing is provided, default to **preparing for the user's meetings today**.
 
 The full arguments string is: `$ARGUMENTS`
 
-## Resolve what to prep
+## Apps
+- **Google Calendar** — meeting details, attendees, past instances.
+- **Gmail** — recent threads with the person/attendees.
+- **Slack** — recent shared threads or DMs. Also check saved-for-later via `is:saved`.
+- **Notion** — shared docs, past meeting notes, project pages.
 
-- **No argument**: Check the calendar for today's meetings. Prep for each one.
+## Resolve what to prep
+- **No argument**: Use Google Calendar to list today's meetings. Prep each.
 - **Person name**: Prep a one-pager on that person and the user's relationship with them.
 - **Topic or meeting title**: Prep a one-pager on that topic, pulling relevant context.
 
 ## Gather context
 
-Use whatever MCP tools are available. Adapt to what's connected — don't error if something is missing, just skip it.
-
 ### For a person:
-
-- **Email**: Recent threads with this person. What's been discussed, what's pending.
-- **Slack**: Recent DMs or shared channel activity. Tone and topics.
-- **Calendar**: Past meetings together. Upcoming meetings scheduled.
-- **Notion / docs**: Any shared documents or pages mentioning this person.
-- **Apollo / CRM**: If available, pull company info, role, LinkedIn, recent activity.
+- Use Gmail for recent threads with this person.
+- Use Slack for recent DMs or shared channel activity; include `is:saved` items that reference them.
+- Use Google Calendar for past meetings together and upcoming meetings scheduled.
+- Use Notion for any shared documents or pages mentioning this person.
 
 ### For a meeting:
-
-- **Calendar**: Meeting details — attendees, agenda, notes from past instances.
-- **Email / Slack**: Recent threads with the attendees. Open topics between you.
-- **Notion / docs**: Relevant docs, past meeting notes, project pages.
+- Use Google Calendar for invite details — attendees, agenda, notes from past instances.
+- Use Gmail and Slack for recent threads with the attendees (include Slack `is:saved`).
+- Use Notion for relevant docs, past meeting notes, project pages.
 
 ### For a topic:
-
-- **Email / Slack / Notion**: Recent discussions, decisions, and open questions on this topic.
-- **Calendar**: Related meetings coming up.
+- Use Gmail, Slack, and Notion for recent discussions, decisions, and open questions.
+- Use Google Calendar for related meetings coming up.
 
 ## Generate the prep
-
-Structure the output based on what's being prepped:
 
 ### For a person:
 
@@ -45,7 +42,7 @@ Structure the output based on what's being prepped:
 # Prep: [Person name]
 
 ## Who they are
-[Role, company, how you know them. Pull from CRM/Apollo if available.]
+[Role, company, how you know them.]
 
 ## Recent context
 [Summary of your last few interactions — emails, Slack, meetings. What's been discussed.]
@@ -94,9 +91,4 @@ Structure the output based on what's being prepped:
 ```
 
 ## Tone
-
 Be thorough but scannable. The user should be able to read this in 2 minutes and walk into a conversation feeling prepared. Use bullet points. Bold the important parts.
-
-## Saving output
-
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `prep`, the full prep output, and `context` set to everything after `prep` in `$ARGUMENTS`.

@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "debrief": {
-      "type": "http",
-      "url": "https://mcp.trydebrief.com/mcp"
-    }
-  }
-}

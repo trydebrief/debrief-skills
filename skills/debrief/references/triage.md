@@ -1,19 +1,18 @@
 # /debrief triage
 
-Generate a prioritized triage across all connected channels with draft responses.
+A prioritized triage across Gmail, Slack, and Notion with draft responses ready to send.
 
-## Gather messages
+## Apps
+- **Gmail** — unread email and draft creation.
+- **Slack** — unread DMs, mentions, important channels; draft creation. Also check saved-for-later via `is:saved`.
+- **Notion** — comments and mentions directed at the user.
 
-Use whatever MCP tools are available to pull in messages that need attention. Adapt to what's connected.
+## Step 1: Gather messages
+- Use Gmail for unread, especially from people (not automated).
+- Use Slack for unread DMs, @mentions, and messages in important channels; include `is:saved` items the user bookmarked.
+- Use Notion for comments and mentions directed at the user.
 
-- **Email**: Unread emails, especially from people (not automated notifications).
-- **Slack**: Unread DMs, mentions, and messages in important channels.
-- **Notion**: Comments or mentions directed at the user.
-- **Other MCPs**: Any messages or notifications that need a response.
-
-## Triage and rank
-
-Rank every item using these tiers:
+## Step 2: Triage and rank
 
 | Tier | Criteria |
 |------|----------|
@@ -22,7 +21,7 @@ Rank every item using these tiers:
 | **🟢 This week** | Can wait but shouldn't be forgotten |
 | **⚪ Skip** | Matches the user's deprioritize list, or truly doesn't need a response |
 
-## Output format
+## Step 3: Output format
 
 For each item (skip the ⚪ tier unless there are fewer than 5 total items):
 
@@ -35,16 +34,12 @@ For each item (skip the ⚪ tier unless there are fewer than 5 total items):
 > [A ready-to-send reply the user can copy, edit, or approve. Match the formality of the source — casual for Slack, professional for email.]
 ```
 
-Group items by tier. Within each tier, sort by most urgent/important first.
+Save Gmail drafts via `create_draft` and Slack drafts via `send_message_draft`. Group items by tier; within each tier, sort by most urgent.
 
-## End with a summary
+## Step 4: Summary
 
 ```
 ---
 **Triage summary:** X urgent, Y today, Z this week, W skipped
 **Estimated time to clear:** ~N minutes
 ```
-
-## Saving output
-
-If the Debrief MCP server is available and the user's config has `syncEnabled`, call `save_output` with the command name `triage`, the full triage output, and `context` set to everything after `triage` in `$ARGUMENTS`.
