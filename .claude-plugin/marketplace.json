@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Open-source, fully local Chief of Staff for any AI agent. Morning briefings, triage, and custom commands — all your data stays on your device.",
-    "version": "0.1.2"
+    "version": "0.1.5"
   },
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "description": "Your Chief of Staff. Morning briefings, prioritized triage, and custom commands.",
       "keywords": ["productivity", "chief-of-staff", "triage", "briefing", "slack", "gmail"],
       "category": "productivity",
-      "version": "0.1.2"
+      "version": "0.1.5"
     }
   ]
 }
